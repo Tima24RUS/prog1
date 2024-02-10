@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Suez+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+}
+
+/* Шапка сайта */
+/* сделать МИР белым*/
+#logo a, a:hover, a:active, a:visited { color: white;
+    text-decoration: none;
+}
+/*-------------------------------------------------*/
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: #fff;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suez One', serif;
+}
+
+#logo > a  {color: #fff;}
+
+
+#logo > a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+        width: 30%;
+        font-size: 1.5em;
+    }
+
+    #about {
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    #about {
+        float: left;
+        width: 100%;
+    }
+}
+
+#about {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a  {color: #fff;}
+
+
+#about > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+#about > a:not(:last-child){
+    margin-right: 7%;
+}
+
+/* Стили для фиксированной шапки */
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: #343434;
+}
+
+.fixed #logo a {color: #0a0a0a;}
+.fixed #about a {color: #343434;}
+.fixed #about a:hover {color: #7c7c7c;}
+
+
+
+#main {
+    padding: 100px 20%;
+    width: 60%;
+    height: 1000px;
+    float: left;
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2023-01/1674348591_catherineasquithgallery-com-p-fon-stilnii-serii-foto-9.jpg);
+    background-blend-mode: multiply;
+    background-color: #8c8c8c;
+    border-top: 2px solid silver;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+
+
+#main h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main span {color: #fff}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+}
+
+#copirait {
+    width: 100%;
+    float: left;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    border-top: 4px solid silver;
+    background: #f4f4f4;
+    font-size: 1.2em;
+    color: rgb(167, 167, 167)
+}
+
+/* для текста*/
+
+table {
+    border: 3px solid #8c8c8c;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 4px solid #dddddd;
+	border-collapse: collapse;
+    border-radius: 10%;
+}
+
+th {
+    font-weight: bold;
+	padding: 30px;
+	background: #efefef;
+	border: 4px solid #dddddd;
+    border-radius: 10%;
+}
+
+td {
+    border: 4px solid #dddddd;
+	padding: 30px;
+}
+

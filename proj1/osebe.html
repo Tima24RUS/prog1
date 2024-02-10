@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/osebe.css">
+    <title>Об авторе</title>
+    <link rel="shortcut icon" href="https://sun6-22.userapi.com/s/v1/if1/f9EDLJvHO7VqLhlIvQdeMcpZaATJvbF0uJntwtel_R2h8UHUIkcURXdZ3lq0sZQrZ4QJWAki.jpg?size=900x900&quality=96&crop=0,0,900,900&ava=1" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>МИР</span>
+        </div>
+        <div id="about">
+            <a href="vved.html" title="Введение" onclick="slowScroll('#main')">Введение</a>
+            <a href="princ.html" title="Принципы" onclick="slowScroll('#overiew')">Принципы</a>
+            <a href="struct.html" title="Структура" onclick="slowScroll('#struct')">Структура</a>
+            <a href="problem.html" title="Проблемы" onclick="slowScroll('#problem')">Проблемы</a>
+            <a href="osebe.html">Об авторе</a>
+        </div>
+    </header> 
+
+    <div id="top">
+        <h1>Данная работа была созданна в рамках дисциплины "Мировые информационные ресурсы"</h1>               
+    </div>
+
+    <div id="main">
+        <div class="img">
+            <img src="1.jpg" alt="" width="370" height="500">
+            <div class="text-box">
+                <br><br><br><br><br><br><br><br><br><br><h2>Выполнил</h2>
+                <br><p>ФИО: Шорохов Тимофей Дмитриевич
+                    <br>Направление: Прикладная информатика в экономике
+                    <br>Группа: 440-1
+                    <br>Факультет: ФСУ
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="overiew">
+        <div class="img1">
+            <img src="https://storage.tusur.ru/files/124473/230-324!mn/%D0%9C%D0%B8%D0%BD%D1%8C%D0%BA%D0%BE%D0%B2_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9_%D0%9B%D0%B5%D0%BE%D0%BD%D0%B8%D0%B4%D0%BE%D0%B2%D0%B8%D1%87.jpg" alt="" width="370" height="500">
+            <div class="text-box1">
+                <br><br><br><br><br><h2>Принял</h2>
+                <br><p>Доцент
+                    <br>Кафедра автоматизированных систем управления (АСУ)
+                    <br>Кандидат физико-математических наук
+                    <br>Старший научный сотрудник
+                    <br>Адрес: Томская область Томск ул. Вершинина 74 фэт, офис 434
+                    <br>Тел.:(3822) 70-15-36
+                    <br>Email: sergei.l.minkov@tusur.ru
+                    <br><a href="https://timetable.tusur.ru/teachers/30747" target="_blank">Расписание занятий</a>
+                </p>
+            </div>
+        </div>        
+    </div>
+
+    <div id="struct">
+        <h2>Источники</h2>
+
+        <div class="asd">
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td><a href="https://habr.com/ru/articles/23957/" style="color:#000000; " target="_blank">Стратегия построения и управления онлайн-сообществами</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="https://vshap.github.io/tasks/task1/" style="color:#000000; " target="_blank">Управление Интернет-сообществом</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="https://ru.wikibrief.org/wiki/Online_community" style="color:#000000; " target="_blank" >Интернет-сообщество - Online community</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="https://www.ietf.org/" style="color:#000000; " target="_blank" >IETF | Internet Engineering Task Force</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force" style="color:#000000; " target="_blank" >Internet Engineering Task Force</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="https://ru.wikipedia.org/wiki/RFC" style="color:#000000; " target="_blank" >Request for Comments, RFC</a></td>
+                </tr>
+            </table> 
+                           
+        </div> 
+
+    </div>
+
+    <div id="copirait">
+        <center><h5>© Шорохов Тимофей 2023 г.</h5></center>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id){
+            $('html, body').animate({
+              scrollTop: $(id).offset().top
+            }, 800);
+        }
+
+        $(document).on("scroll", function (){
+            if($(window).scrollTop() == 0)
+              $("header").removeClass("fixed");
+            else
+              $("header").attr("class","fixed");
+        });
+    </script>
+</body>
+</html>

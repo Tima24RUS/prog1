@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/princ.css">
+    <title>Принципы</title>
+    <link rel="shortcut icon" href="https://sun6-22.userapi.com/s/v1/if1/f9EDLJvHO7VqLhlIvQdeMcpZaATJvbF0uJntwtel_R2h8UHUIkcURXdZ3lq0sZQrZ4QJWAki.jpg?size=900x900&quality=96&crop=0,0,900,900&ava=1" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span><a href="index.html">МИР</a></span>
+        </div>
+        <div id="about">
+            <a href="vved.html" title="Введение" onclick="slowScroll('#overiew')">Введение</a>
+            <a href="#" title="Принципы" onclick="slowScroll('#main')">Принципы</a>
+            <a href="struct.html" title="Структура" onclick="slowScroll('#struct')">Структура</a>
+            <a href="problem.html" title="Проблемы" onclick="slowScroll('#problem')">Проблемы</a>
+            
+            <a href="osebe.html">Об авторе</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="intro">
+            <h2>Принципы</h2>
+            <table>
+                <tr>
+                    <td>Демократия</td>
+                    <td>Демократические принципы включают в 
+                        себя право участников на свободное 
+                        выражение своих мнений, участие в 
+                        принятии решений и влияние на развитие 
+                        сообщества. Это может быть достигнуто 
+                        через голосования, обсуждения и консультации 
+                        с участниками.</td>
+                </tr>
+                <tr>
+                    <td>Открытость и прозрачность</td>
+                    <td>Ключевыми принципами являются доступность 
+                        информации о деятельности сообщества и 
+                        процессах принятия решений. Участники 
+                        должны иметь возможность ознакомиться с 
+                        правилами, политиками и результатами принятых 
+                        решений. Это способствует установлению доверия 
+                        и предотвращению конфликтов.</td>
+                </tr>
+                <tr>
+                    <td>Равноправие</td>
+                    <td>Все участники сообщества должны быть равны 
+                        перед законом и иметь равные возможности 
+                        для участия и выражения своих идей. Никто 
+                        не должен быть дискриминирован или ограничен 
+                        в своих правах на основе расы, пола, возраста 
+                        или других характеристик.</td>
+                </tr>
+                <tr>
+                    <td>Уважение и толерантность</td>
+                    <td>Важно создать атмосферу взаимного уважения 
+                        и толерантности внутри сообщества. Участники 
+                        должны проявлять уважение к мнениям и 
+                        разнообразию взглядов других участников, 
+                        даже если они не согласны с ними. 
+                        Это способствует конструктивному общению 
+                        и предотвращению конфликтов.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    
+
+    <div id="copirait">
+        <center><h5>© Шорохов Тимофей 2023 г.</h5></center>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id){
+            $('html, body').animate({
+              scrollTop: $(id).offset().top
+            }, 800);
+        }
+
+        $(document).on("scroll", function (){
+            if($(window).scrollTop() == 0)
+              $("header").removeClass("fixed");
+            else
+              $("header").attr("class","fixed");
+        });
+    </script>
+</body>
+</html>

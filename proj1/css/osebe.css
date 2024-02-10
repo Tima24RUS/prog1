@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Suez+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+}
+
+/* Шапка сайта */
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: #fff;
+    cursor: pointer;
+}
+
+header #logo span {
+    
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+        width: 30%;
+        font-size: 1.5em;
+    }
+
+    #about {
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    #about {
+        float: left;
+        width: 100%;
+    }
+}
+
+#about {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a  {color: #fff;}
+
+
+
+#about > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+#about > a:not(:last-child){
+    margin-right: 7%;
+}
+
+/* Стили для фиксированной шапки */
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: #343434;
+}
+
+.fixed #about a {color: #343434;}
+.fixed #about a:hover {color: #7c7c7c;}
+
+/* Главный блок */
+
+#top {
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://sopranoclub.ru/images/105-krasivyh-odnotonnyh-fonov/file46967.jpg);
+    background-blend-mode: multiply;
+    background-color: #656666;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+@media (min-width: 1001px) {
+    #top {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 650px) {
+    #top {
+        font-size: 1.3em;
+        padding-top: 50%;
+    }
+}
+
+#top h1 {
+    padding-top: 20%;
+}
+
+/* Блок с введением */
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*padding: 100px 20%;
+    width: 60%;*/
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    /*font-size: 1.3em;*/
+}
+
+img {
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.img {
+    width: 70%;
+    
+}
+
+.text-box {
+    color: #000000;
+}
+
+.text-box h2 {
+    font-size: 42px;
+}
+
+.text-box p {
+    font-size: 1.5em;
+}
+
+#overiew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/watercolor-texture-background-light-gray-wallpaper_53876-104729.jpg?w=996&t=st=1700220386~exp=1700220986~hmac=25323c8d9269b08de4bb81ba4b924a311a48e278223fe545890bf77b61ee84de);
+    
+    background-blend-mode: multiply;
+    background-color: #152b3d;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img {
+    float: left;
+    border: 3px solid rgb(25, 25, 49);
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.img1 {
+    width: 70%;
+    
+}
+
+.text-box1 {
+    color: #fff;
+}
+
+.text-box1 h2 {
+    font-size: 42px;
+}
+
+.text-box1 p {
+    font-size: 1.5em;
+}
+
+
+#overiew span {color: #fff}
+
+/* struct */
+
+#struct {
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+}
+
+#struct h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#struct span {color: #a0a0a0}
+
+/* для текста*/
+
+table {
+    border: 3px solid #191919;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 4px solid #000000;
+	border-collapse: collapse;
+    border-radius: 10%;
+}
+
+th {
+    font-weight: bold;
+	padding: 30px;
+	background: #efefef;
+	border: 4px solid rgb(53, 53, 53);
+    border-radius: 10%;
+}
+
+td {
+    border: 4px solid #5f5f5f;
+	padding: 30px;
+    
+}
+
+
+/* Problem */
+
+#problem {
+    float: left;
+    background-image: url(http://decaturjaycees.com/wp-content/uploads/2022/02/dec-2.jpg);
+    
+    
+    background-blend-mode: multiply;
+    background-color: #220369;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+#problem h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Блок с обратной связью*/
+
+
+
+
+/* Кнопка введение*/
+
+#form_input1 {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#form_input1 {
+    margin-top: 15px;
+    width: 25%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+
+#form_input1 > a  {color: #fff;}
+
+
+#form_input1 > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.btn1 {
+    border-radius: 10px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #6a6a6a;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+    /*font-family: 'Roboto Slab', serif;*/
+}
+
+#mess_send1 > a, a:hover, a:active, a:visited { color: white; }
+
+.btn1:hover {
+    background-color: #a9a9a9;
+}
+
+/* Кнопка принципы*/
+
+#form_input2 {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#form_input2 {
+    margin-top: 15px;
+    width: 25%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+
+#form_input2 > a  {color: #fff;}
+
+
+#form_input2 > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.btn2 {
+    border-radius: 10px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #6a6a6a;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+    /*font-family: 'Roboto Slab', serif;*/
+}
+
+#mess_send2 > a, a:hover, a:active, a:visited { color: white; }
+
+.btn2:hover {
+    background-color: #2b2b2b;
+}
+
+/* Кнопка структура*/
+
+#form_input3 {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#form_input3 {
+    margin-top: 15px;
+    width: 25%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+
+#form_input3 > a  {color: #fff;}
+
+
+#form_input3 > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.btn3 {
+    border-radius: 10px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #6a6a6a;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+    /*font-family: 'Roboto Slab', serif;*/
+}
+
+#mess_send3 > a, a:hover, a:active, a:visited { color: white; }
+
+.btn3:hover {
+    background-color: #a9a9a9;
+}
+
+/* Кнопка Проблемы*/
+
+#form_input4 {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#form_input4 {
+    margin-top: 15px;
+    width: 25%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+
+#form_input4 > a  {color: #fff;}
+
+
+#form_input4 > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.btn4 {
+    border-radius: 10px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #6a6a6a;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+    /*font-family: 'Roboto Slab', serif;*/
+}
+
+#mess_send4 > a, a:hover, a:active, a:visited { color: white; }
+
+.btn4:hover {
+    background-color: #2b2b2b;
+}
+
+/* копирайт*/
+
+#copirait {
+    width: 100%;
+    float: left;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    border-top: 4px solid silver;
+    background: #f4f4f4;
+    font-size: 1.2em;
+    color: rgb(167, 167, 167)
+}
